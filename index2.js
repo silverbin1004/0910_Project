@@ -66,16 +66,16 @@ function printNumbers() {
 }
 
 //문제 6: do-while 문을 사용하여 사용자가 입력한 숫자가 10이 될 때까지 숫자를 계속 입력받고, 입력된 숫자를 출력하는 프로그램을 작성하세요.
-// function inputUntilTen() {
-// 	// 여기에 코드를 작성하세요
-// 	let num = 0;
-//     do {
-//         console.log(num);
-//         num++;
-//     }while(num<11)
-// }
+function inputUntilTen() {
+	// 여기에 코드를 작성하세요
+	let num = 0;
+    do {
+        console.log(num);
+        num++;
+    }while(num<11)
+}
 
-// console.log(inputUntilTen());
+console.log(inputUntilTen());
 
 //문제 7: 두 개의 숫자를 더하는 함수 addNumbers를 선언하고, 해당 함수를 호출하여 결과를 출력하세요.
 function addNumbers(a, b) {
