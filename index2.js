@@ -174,21 +174,26 @@ console.log(findMax(2,3));
 function grade(score) {
 	// 여기에 코드를 작성하세요
 	if( score >= 90 ){
-		console.log("당신의 학점은 A입니다.");
+		console.log("A");
 	} else if ( score >= 80 && score < 90 ){
-		console.log("당신의 학점은 B입니다.");
+		console.log("B");
 	} else if ( score >= 70 && score < 80 ){
-		console.log("당신의 학점은 C입니다.");
+		console.log("C");
 	} else if ( score < 60 ){
-		console.log("당신의 학점은 F입니다.");
+		console.log("F");
 	}
 }
-grade(score);
+grade(90);
 
 //문제 18: switch문을 사용하여 사용자가 입력한 달(month)에 맞는 계절을 출력하는 프로그램을 작성하세요. (예시: 3 ~ 5월은 봄, 6 ~ 8월은 여름, 9 ~ 11월은 가을, 12 ~ 2월은 겨울)
 function getSeason(month) {
 	// 여기에 코드를 작성하세요
 	switch(month){
+		case 12:
+		case 1:
+		case 2:
+			console.log("겨울입니다,");
+			break;
 		case 3:
 		case 4:
 		case 5:
@@ -204,13 +209,7 @@ function getSeason(month) {
 		case 11:
 			consol.log("가을입니다.");
 			break;
-		case 12:
-		case 1:
-		case 2:
-			console.log("겨울입니다,");
-			break;
 	}
-
 }
 
 //문제 19: for문을 사용하여 1부터 10까지의 숫자의 합을 구하는 프로그램을 작성하세요.
@@ -324,13 +323,10 @@ console.log(getLongerString("str11","str1"));
 //문제 29: 숫자로 이루어진 배열을 입력받아, 배열의 모든 요소에 5를 더한 새로운 배열을 반환하는 화살표 함수를 작성하세요.
 const addFiveToArray = (arr) => {
     // 여기에 코드를 작성하세요
-	for (let i = 0; i < arr.length; i++){
-		console.log(arr[i]+5);
-	}
+	return arr.map(element => element + 5);
 };
-
 // 함수 호출
-addFiveToArray([1,2,3]);
+console.log(addFiveToArray([1,2,3]));
 
 //문제 30: 세 개의 숫자를 입력받아, 세 숫자의 합이 100 이상이면 "합격", 그렇지 않으면 "불합격"을 반환하는 화살표 함수를 작성하세요.
 const checkSum = (a, b, c) => {
