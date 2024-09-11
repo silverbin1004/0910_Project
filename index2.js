@@ -280,13 +280,15 @@ console.log(calculateAverage([5,5,5]));
 //문제 25: 배열의 모든 요소를 제곱한 값을 반환하는 함수 표현식을 작성하고, 이를 호출하세요.
 const squareArray = function(arr) {
 	// 여기에 코드를 작성하세요
+    let result = 0;
 	for(let i = 0; i < arr.length; i++){
-		return Math.pow(arr[i],2);
+		result = Math.pow(arr[i],2);
+        console.log(result);
 	}
 };
 
 // 함수 호출
-console.log(squareArray([3,6]));
+squareArray([3,6]);
 
 //문제 26: 두 문자열을 합친 후, 그 길이를 반환하는 함수 표현식을 작성하세요. (Hint: String.prototype.lengtn)
 const combineAndLength = function(str1, str2) {
